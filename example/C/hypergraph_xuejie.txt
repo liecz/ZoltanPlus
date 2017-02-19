@@ -1,0 +1,32 @@
+##  example of yilinyan's paper, fig.3
+##  Number of vertices:
+5
+
+##  Here we list the global ID of each vertex, weight, type.
+1 1.0 1
+2 1.0 1
+3 1.0 1
+4 1.0 1
+5 1.0 1
+
+##  Number of hyperedges:
+5
+
+##  Sum of the number of vertices in each hyperedge
+
+12
+
+##  Here we list for each hyperedge, its global ID, the number of vertices it links,
+##  and the global ID of each vertex in the hyperedge.
+
+1   1  1   
+2   1  2
+3   2  1  2
+4   5  1  2  3  4  5
+5   3  3  4  5
+##  the weight of each hyperedge.
+1 50.0
+2 45.0
+3 40.0
+4 35.0
+5 30.0

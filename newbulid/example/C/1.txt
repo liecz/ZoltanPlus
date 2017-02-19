@@ -1,0 +1,1043 @@
+Hello hypergraph partition world. --- from Proc0
+ZOLTAN Load balancing method = 10 (HYPERGRAPH)
+Proc 1 is ready... 
+ZOLTAN (Processor 1) Entering Zoltan_LB_Partition   
+ZOLTAN (Processor 1) Entering Zoltan_LB   
+Proc 2 is ready... 
+ZOLTAN (Processor 2) Entering Zoltan_LB_Partition   
+ZOLTAN (Processor 2) Entering Zoltan_LB   
+Proc 3 is ready... 
+ZOLTAN (Processor 3) Entering Zoltan_LB_Partition   
+ZOLTAN (Processor 3) Entering Zoltan_LB   
+Proc 0 is ready... 
+ZOLTAN (Processor 0) Entering Zoltan_LB_Partition   
+ZOLTAN (Processor 0) Entering Zoltan_LB   
+Build configuration:
+
+  ZOLTAN_ID_TYPE: unsigned int (4 bytes)
+  ZOLTAN_GNO_TYPE: ssize_t, (8 bytes)
+  MPI_Datatype for ZOLTAN_ID_TYPE: MPI_UNSIGNED
+  MPI_Datatype for ZOLTAN_GNO_TYPE: MPI_LONG
+
+ZOLTAN Parameter IMBALANCE_TOL[0] = 1.100000
+ZOLTAN Parameter AUTO_MIGRATE = FALSE
+ZOLTAN Parameter MIGRATE_ONLY_PROC_CHANGES = 1
+ZOLTAN Parameter OBJ_WEIGHT_DIM = 1
+ZOLTAN Parameter EDGE_WEIGHT_DIM = 1
+ZOLTAN Parameter DEBUG_LEVEL = 10
+ZOLTAN Parameter DEBUG_PROCESSOR = 0
+ZOLTAN Parameter DETERMINISTIC = TRUE
+ZOLTAN Parameter TIMER = 1 (wall)
+ZOLTAN Parameter NUM_GID_ENTRIES = 1
+ZOLTAN Parameter NUM_LID_ENTRIES = 1
+ZOLTAN Parameter RETURN_LISTS = IMPORT AND EXPORT
+ZOLTAN Parameter NUM_GLOBAL_PARTS = -1
+ZOLTAN Parameter NUM_LOCAL_PARTS = -1
+ZOLTAN Parameter REMAP = 1
+ZOLTAN Parameter SEED = 123456789 (123456789)
+ZOLTAN Parameter LB_APPROACH = REPARTITION
+0 Proc_To_Part Proc 0 NParts 1 FPart 0
+3 Proc_To_Part Proc 0 NParts 1 FPart 0
+3 Proc_To_Part Proc 1 NParts 1 FPart 1
+3 Proc_To_Part Proc 2 NParts 1 FPart 2
+1 Proc_To_Part Proc 0 NParts 1 FPart 0
+1 Proc_To_Part Proc 1 NParts 1 FPart 1
+1 Proc_To_Part Proc 2 NParts 1 FPart 2
+1 Proc_To_Part Proc 3 NParts 1 FPart 3
+ZOLTAN (Processor 1) Entering Zoltan_LB_Get_Part_Sizes   
+[1] Debug: num_global_parts = 4
+2 Proc_To_Part Proc 0 NParts 1 FPart 0
+2 Proc_To_Part Proc 1 NParts 1 FPart 1
+2 Proc_To_Part Proc 2 NParts 1 FPart 2
+2 Proc_To_Part Proc 3 NParts 1 FPart 3
+ZOLTAN (Processor 2) Entering Zoltan_LB_Get_Part_Sizes   
+[2] Debug: num_global_parts = 4
+3 Proc_To_Part Proc 3 NParts 1 FPart 3
+ZOLTAN (Processor 3) Entering Zoltan_LB_Get_Part_Sizes   
+[3] Debug: num_global_parts = 4
+0 Proc_To_Part Proc 1 NParts 1 FPart 1
+0 Proc_To_Part Proc 2 NParts 1 FPart 2
+0 Proc_To_Part Proc 3 NParts 1 FPart 3
+ZOLTAN (Processor 0) Entering Zoltan_LB_Get_Part_Sizes   
+[0] Debug: num_global_parts = 4
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Get_Part_Sizes   
+ZOLTAN (Processor 0) Entering Zoltan_PHG   
+ZOLTAN (Processor 3) Exiting Zoltan_LB_Get_Part_Sizes   
+ZOLTAN (Processor 3) Entering Zoltan_PHG   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Get_Part_Sizes   
+ZOLTAN (Processor 2) Entering Zoltan_PHG   
+Zoltan_PHG_Initialize_Params 
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Get_Part_Sizes   
+ZOLTAN (Processor 1) Entering Zoltan_PHG   
+Zoltan_PHG_Initialize_Params 
+Zoltan_PHG_Initialize_Params 
+Zoltan_PHG_Initialize_Params 
+ZOLTAN Parameter HYPERGRAPH_PACKAGE = PHG
+ZOLTAN Parameter PHG_MULTILEVEL = 1
+ZOLTAN Parameter PHG_CUT_OBJECTIVE = connectivity
+ZOLTAN Parameter PHG_OUTPUT_LEVEL = 0
+ZOLTAN Parameter FINAL_OUTPUT = 0
+ZOLTAN Parameter CHECK_GRAPH = 0
+ZOLTAN Parameter CHECK_HYPERGRAPH = 0
+ZOLTAN Parameter PHG_NPROC_VERTEX = -1
+ZOLTAN Parameter PHG_NPROC_EDGE = -1
+ZOLTAN Parameter PHG_COARSENING_LIMIT = 100
+ZOLTAN Parameter PHG_COARSENING_NCANDIDATE = 100
+ZOLTAN Parameter PHG_COARSENING_METHOD = agg
+ZOLTAN Parameter PHG_COARSENING_METHOD_FAST = l-ipm
+ZOLTAN Parameter PHG_VERTEX_VISIT_ORDER = 0
+ZOLTAN Parameter PHG_EDGE_SCALING = 0
+ZOLTAN Parameter PHG_VERTEX_SCALING = 0
+ZOLTAN Parameter PHG_COARSEPARTITION_METHOD = auto
+ZOLTAN Parameter PHG_REFINEMENT_METHOD = fm2
+ZOLTAN Parameter PHG_DIRECT_KWAY = 0
+ZOLTAN Parameter PHG_REFINEMENT_LOOP_LIMIT = 10
+ZOLTAN Parameter PHG_REFINEMENT_MAX_NEG_MOVE = 250
+ZOLTAN Parameter PHG_REFINEMENT_QUALITY = 1.000000
+ZOLTAN Parameter PHG_USE_TIMERS = 0
+ZOLTAN Parameter USE_TIMERS = 0
+ZOLTAN Parameter PHG_EDGE_SIZE_THRESHOLD = 0.250000
+ZOLTAN Parameter PHG_MATCH_EDGE_SIZE_THRESHOLD = 500
+ZOLTAN Parameter PHG_BAL_TOL_ADJUSTMENT = 0.700000
+ZOLTAN Parameter PHG_EDGE_WEIGHT_OPERATION = max
+ZOLTAN Parameter PARKWAY_SERPART = patoh
+ZOLTAN Parameter ADD_OBJ_WEIGHT = none
+ZOLTAN Parameter PHG_RANDOMIZE_INPUT = 0
+ZOLTAN Parameter PHG_PROCESSOR_REDUCTION_LIMIT = 0.000000
+ZOLTAN Parameter PHG_REPART_MULTIPLIER = 100.000000
+ZOLTAN Parameter HYBRID_REDUCTION_FACTOR = 0.100000
+ZOLTAN Parameter HYBRID_REDUCTION_LEVELS = 2147483647
+ZOLTAN Parameter PATOH_ALLOC_POOL0 = 0
+ZOLTAN Parameter PATOH_ALLOC_POOL1 = 0
+Zoltan_PHG_Build_Hypergraph 
+Zoltan_PHG_Build_Hypergraph 
+ZOLTAN (Processor 1) Entering Zoltan_PHG_Build_Hypergraph   
+ZOLTAN (Processor 1) Entering Zoltan_Get_Hypergraph_From_Queries   
+Zoltan_PHG_Build_Hypergraph 
+ZOLTAN (Processor 2) Entering Zoltan_PHG_Build_Hypergraph   
+ZOLTAN (Processor 2) Entering Zoltan_Get_Hypergraph_From_Queries   
+ZOLTAN (Processor 2) Entering Zoltan_Get_Obj_List   
+ZOLTAN (Processor 2) Entering _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 2) Exiting _Zoltan_Get_Obj_List   
+Zoltan_PHG_Build_Hypergraph 
+ZOLTAN (Processor 0) Entering Zoltan_PHG_Build_Hypergraph   
+ZOLTAN (Processor 0) Entering Zoltan_Get_Hypergraph_From_Queries   
+ZOLTAN (Processor 0) Entering Zoltan_Get_Obj_List   
+ZOLTAN (Processor 1) Entering Zoltan_Get_Obj_List   
+ZOLTAN (Processor 1) Entering _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 1) Exiting _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 1) Exiting Zoltan_Get_Obj_List   
+ZOLTAN (Processor 1) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 0) Entering _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 0) Exiting _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 0) Exiting Zoltan_Get_Obj_List   
+ZOLTAN (Processor 0) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 2) Exiting Zoltan_Get_Obj_List   
+ZOLTAN (Processor 2) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 3) Entering Zoltan_PHG_Build_Hypergraph   
+ZOLTAN (Processor 3) Entering Zoltan_Get_Hypergraph_From_Queries   
+ZOLTAN (Processor 3) Entering Zoltan_Get_Obj_List   
+ZOLTAN (Processor 3) Entering _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 3) Exiting _Zoltan_Get_Obj_List   
+ZOLTAN (Processor 3) Exiting Zoltan_Get_Obj_List   
+ZOLTAN (Processor 3) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 3) Entering Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 3) Zoltan_Hypergraph_Queries: done with Get_HG_Size_CS
+ZOLTAN (Processor 3) Zoltan_Hypergraph_Queries: done with Get_HG_CS
+ZOLTAN (Processor 3) Exiting Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 0) Entering Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 2) Entering Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 2) Zoltan_Hypergraph_Queries: done with Get_HG_Size_CS
+ZOLTAN (Processor 2) Zoltan_Hypergraph_Queries: done with Get_HG_CS
+ZOLTAN (Processor 2) Exiting Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 1) Entering Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 1) Zoltan_Hypergraph_Queries: done with Get_HG_Size_CS
+ZOLTAN (Processor 1) Zoltan_Hypergraph_Queries: done with Get_HG_CS
+ZOLTAN (Processor 1) Exiting Zoltan_Hypergraph_Queries   
+ZOLTAN (Processor 0) Zoltan_Hypergraph_Queries: done with Get_HG_Size_CS
+ZOLTAN (Processor 0) Zoltan_Hypergraph_Queries: done with Get_HG_CS
+ZOLTAN (Processor 0) Exiting Zoltan_Hypergraph_Queries   
+### phg_build_calls.c shuffledFileCopy 进程中分散fileCopy
+### phg_build_calls.c shuffledFileCopy 进程中分散fileCopy
+9 10 
+###End
+ZOLTAN (Processor 2) Entering Zoltan_PHG_GIDs_to_global_number   
+### phg_build_calls.c shuffledFileCopy 进程中分散fileCopy
+4 8 19 20 22 
+###End
+ZOLTAN (Processor 3) Entering Zoltan_PHG_GIDs_to_global_number   
+### phg_build_calls.c shuffledFileCopy 进程中分散fileCopy
+3 6 7 12 13 14 15 23 
+###End
+ZOLTAN (Processor 1) Entering Zoltan_PHG_GIDs_to_global_number   
+1 2 5 11 16 17 18 21 24 
+###End
+ZOLTAN (Processor 0) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 1) Exiting Zoltan_Get_Hypergraph_From_Queries   
+
+ ## phg_bulid.c 133 After Zoltan_Get_Hypergraph_From_Queries() 读入超边权值
+ZOLTAN (Processor 2) Exiting Zoltan_Get_Hypergraph_From_Queries   
+
+ ## phg_bulid.c 133 After Zoltan_Get_Hypergraph_From_Queries() 读入超边权值
+9.0 10.0 
+ZOLTAN (Processor 0) Exiting Zoltan_Get_Hypergraph_From_Queries   
+
+ ## phg_bulid.c 133 After Zoltan_Get_Hypergraph_From_Queries() 读入超边权值
+1.0 2.0 5.0 11.0 16.0 17.0 18.0 21.0 24.0 
+ ## END  
+ZOLTAN (Processor 0) Entering Zoltan_PHG_Fill_Hypergraph   
+ZOLTAN (Processor 3) Exiting Zoltan_Get_Hypergraph_From_Queries   
+
+ ## phg_bulid.c 133 After Zoltan_Get_Hypergraph_From_Queries() 读入超边权值
+4.0 8.0 19.0 20.0 22.0 
+ ## END  
+ZOLTAN (Processor 3) Entering Zoltan_PHG_Fill_Hypergraph   
+3.0 6.0 7.0 12.0 13.0 14.0 15.0 23.0 
+ ## END  
+ZOLTAN (Processor 1) Entering Zoltan_PHG_Fill_Hypergraph   
+ ## END  
+ZOLTAN (Processor 2) Entering Zoltan_PHG_Fill_Hypergraph   
+ZOLTAN (Processor 0) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 1) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 3) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 2) Entering Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_GIDs_to_global_number   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_GIDs_to_global_number   
+
+
+
+
+
+
+{0 3 3.000000} {1 4 6.000000} {2 5 4.000000} 
+## phg_bulid.c 835 #设置超边权值过程之后
+3.0 6.0 4.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+##　end
+ZOLTAN (Processor 3) Entering Zoltan_PHG_Add_Repart_Data   
+## phg_bulid.c 835 #设置超边权值过程之后
+## phg_bulid.c 835 #设置超边权值过程之后
+1.0 2.0 5.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+##　end
+ZOLTAN (Processor 1) Entering Zoltan_PHG_Add_Repart_Data   
+{0 0 1.000000} {1 1 2.000000} {2 2 5.000000} 
+## phg_bulid.c 835 #设置超边权值过程之后
+1.0 2.0 5.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+##　end
+ZOLTAN (Processor 0) Entering Zoltan_PHG_Add_Repart_Data   
+3.0 6.0 4.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+##　end
+ZOLTAN (Processor 2) Entering Zoltan_PHG_Add_Repart_Data   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_Add_Repart_Data   
+ZOLTAN (Processor 2) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 2) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_Add_Repart_Data   
+ZOLTAN (Processor 1) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 1) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_Add_Repart_Data   
+ZOLTAN (Processor 3) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_Add_Repart_Data   
+ZOLTAN (Processor 0) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 0) Exiting Zoltan_HG_Create_Mirror   
+HYPERGRAPH on process 0
+(0) 7 INPUT VERTICES (out of 24) : gno (gid/lid) (weights) nhedges fixed inpart outpart objSize)
+  0 (1/0) (2.000000) -  -  0  -  - 
+  1 (2/1) (3.000000) -  -  0  -  - 
+  2 (3/2) (4.000000) -  -  0  -  - 
+  3 (4/3) (5.000000) -  -  0  -  - 
+  4 (5/4) (6.000000) -  -  0  -  - 
+  5 (6/5) (7.000000) -  -  0  -  - 
+  6 (7/6) (8.000000) -  -  0  -  - 
+ZOLTAN (Processor 3) Exiting Zoltan_HG_Create_Mirror   
+
+(0) 0 INPUT or REMOVED EDGES (out of 0), 0 pins: gno size (weights) (pinGNO/pinProc)
+
+(0) 15 PHG EDGES (1 weights), 32 total PHG PINS:
+ edge 0:  100.000000
+ 1 pins: 0 
+ edge 1:  200.000000
+ 2 pins: 0 1 
+ edge 2:  500.000000
+ 5 pins: 0 1 2 3 4 
+ edge 3:  1.000000
+ 2 pins: 12 0 
+ edge 4:  1.000000
+ 2 pins: 12 1 
+ edge 5:  1.000000
+ 2 pins: 12 2 
+ edge 6:  1.000000
+ 2 pins: 12 3 
+ edge 7:  1.000000
+ 2 pins: 12 4 
+ edge 8:  1.000000
+ 2 pins: 12 5 
+ edge 9:  1.000000
+ 2 pins: 12 6 
+ edge 10:  1.000000
+ 2 pins: 13 7 
+ edge 11:  1.000000
+ 2 pins: 13 8 
+ edge 12:  1.000000
+ 2 pins: 13 9 
+ edge 13:  1.000000
+ 2 pins: 13 10 
+ edge 14:  1.000000
+ 2 pins: 13 11 
+
+(0) 14 PHG PIN global numbers and 1 weights:
+  0  0: 2.000000 
+  1  1: 3.000000 
+  2  2: 4.000000 
+  3  3: 5.000000 
+  4  4: 6.000000 
+  5  5: 7.000000 
+  6  6: 8.000000 
+  7  7: 9.000000 
+  8  8: 1.000000 
+  9  9: 1.100000 
+  10  10: 2.100000 
+  11  11: 3.100000 
+  12  12: 0.000000 
+  13  13: 0.000000 
+
+
+HYPERGRAPH on process 1
+(1) 7 INPUT VERTICES (out of 24) : gno (gid/lid) (weights) nhedges fixed inpart outpart objSize)
+  7 (8/0) (9.000000) -  -  1  -  - 
+  8 (9/1) (1.000000) -  -  1  -  - 
+  9 (10/2) (1.100000) -  -  1  -  - 
+  10 (11/3) (2.100000) -  -  1  -  - 
+  11 (12/4) (3.100000) -  -  1  -  - 
+  12 (13/5) (4.100000) -  -  1  -  - 
+  13 (14/6) (5.100000) -  -  1  -  - 
+
+(1) 0 INPUT or REMOVED EDGES (out of 0), 0 pins: gno size (weights) (pinGNO/pinProc)
+
+(1) 15 PHG EDGES (1 weights), 0 total PHG PINS:
+ edge 0:  100.000000
+ 0 pins: 
+ edge 1:  200.000000
+ 0 pins: 
+ edge 2:  500.000000
+ 0 pins: 
+ edge 3:  1.000000
+ 0 pins: 
+ edge 4:  1.000000
+ 0 pins: 
+ edge 5:  1.000000
+ 0 pins: 
+ edge 6:  1.000000
+ 0 pins: 
+ edge 7:  1.000000
+ 0 pins: 
+ edge 8:  1.000000
+ 0 pins: 
+ edge 9:  1.000000
+ 0 pins: 
+ edge 10:  1.000000
+ 0 pins: 
+ edge 11:  1.000000
+ 0 pins: 
+ edge 12:  1.000000
+ 0 pins: 
+ edge 13:  1.000000
+ 0 pins: 
+ edge 14:  1.000000
+ 0 pins: 
+
+(1) 14 PHG PIN global numbers and 1 weights:
+  0  14: 4.100000 
+  1  15: 5.100000 
+  2  16: 6.100000 
+  3  17: 7.100000 
+  4  18: 8.100000 
+  5  19: 9.100000 
+  6  20: 0.200000 
+  7  21: 1.200000 
+  8  22: 2.200000 
+  9  23: 3.200000 
+  10  24: 4.200000 
+  11  25: 0.000000 
+  12  26: 0.000000 
+  13  27: 0.000000 
+
+
+HYPERGRAPH on process 2
+(2) 7 INPUT VERTICES (out of 24) : gno (gid/lid) (weights) nhedges fixed inpart outpart objSize)
+  14 (15/0) (6.100000) -  -  2  -  - 
+  15 (16/1) (7.100000) -  -  2  -  - 
+  16 (17/2) (8.100000) -  -  2  -  - 
+  17 (18/3) (9.100000) -  -  2  -  - 
+  18 (19/4) (0.200000) -  -  2  -  - 
+  19 (20/5) (1.200000) -  -  2  -  - 
+  20 (21/6) (2.200000) -  -  2  -  - 
+
+(2) 0 INPUT or REMOVED EDGES (out of 0), 0 pins: gno size (weights) (pinGNO/pinProc)
+
+(2) 15 PHG EDGES (1 weights), 15 total PHG PINS:
+ edge 15:  300.000000
+ 3 pins: 0 1 2 
+ edge 16:  600.000000
+ 6 pins: 0 1 2 3 4 5 
+ edge 17:  400.000000
+ 4 pins: 0 1 2 3 
+ edge 18:  1.000000
+ 1 pins: 13 
+ edge 19:  1.000000
+ 1 pins: 13 
+ edge 20:  1.000000
+ 0 pins: 
+ edge 21:  1.000000
+ 0 pins: 
+ edge 22:  1.000000
+ 0 pins: 
+ edge 23:  1.000000
+ 0 pins: 
+ edge 24:  1.000000
+ 0 pins: 
+ edge 25:  1.000000
+ 0 pins: 
+ edge 26:  1.000000
+ 0 pins: 
+ edge 27:  1.000000
+ 0 pins: 
+ edge 28:  1.000000
+ 0 pins: 
+ edge 29:  1.000000
+ 0 pins: 
+
+(2) 14 PHG PIN global numbers and 1 weights:
+  0  0: 2.000000 
+  1  1: 3.000000 
+  2  2: 4.000000 
+  3  3: 5.000000 
+  4  4: 6.000000 
+  5  5: 7.000000 
+  6  6: 8.000000 
+  7  7: 9.000000 
+  8  8: 1.000000 
+  9  9: 1.100000 
+  10  10: 2.100000 
+  11  11: 3.100000 
+  12  12: 0.000000 
+  13  13: 0.000000 
+
+
+HYPERGRAPH on process 3
+(3) 3 INPUT VERTICES (out of 24) : gno (gid/lid) (weights) nhedges fixed inpart outpart objSize)
+  21 (22/0) (3.200000) -  -  3  -  - 
+  22 (23/1) (4.200000) -  -  3  -  - 
+  23 (24/2) (0.000000) -  -  3  -  - 
+
+(3) 0 INPUT or REMOVED EDGES (out of 0), 0 pins: gno size (weights) (pinGNO/pinProc)
+
+(3) 15 PHG EDGES (1 weights), 22 total PHG PINS:
+ edge 15:  300.000000
+ 0 pins: 
+ edge 16:  600.000000
+ 0 pins: 
+ edge 17:  400.000000
+ 0 pins: 
+ edge 18:  1.000000
+ 1 pins: 0 
+ edge 19:  1.000000
+ 1 pins: 1 
+ edge 20:  1.000000
+ 2 pins: 12 2 
+ edge 21:  1.000000
+ 2 pins: 12 3 
+ edge 22:  1.000000
+ 2 pins: 12 4 
+ edge 23:  1.000000
+ 2 pins: 12 5 
+ edge 24:  1.000000
+ 2 pins: 12 6 
+ edge 25:  1.000000
+ 2 pins: 12 7 
+ edge 26:  1.000000
+ 2 pins: 12 8 
+ edge 27:  1.000000
+ 2 pins: 13 9 
+ edge 28:  1.000000
+ 2 pins: 13 10 
+ edge 29:  1.000000
+ 2 pins: 13 11 
+
+(3) 14 PHG PIN global numbers and 1 weights:
+  0  14: 4.100000 
+  1  15: 5.100000 
+  2  16: 6.100000 
+  3  17: 7.100000 
+  4  18: 8.100000 
+  5  19: 9.100000 
+  6  20: 0.200000 
+  7  21: 1.200000 
+  8  22: 2.200000 
+  9  23: 3.200000 
+  10  24: 4.200000 
+  11  25: 0.000000 
+  12  26: 0.000000 
+  13  27: 0.000000 
+
+
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_Fill_Hypergraph   
+
+ ## phg_bulid.c 161 After Zoltan_PHG_Fill_Hypergraph() 
+300.0 600.0 400.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ## END  
+### phg_build.c 177 测试fileCopy 3
+3 6 4 1 1 1 1 1 1 1 1 1 1 1 1 
+###End
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_Fill_Hypergraph   
+
+ ## phg_bulid.c 161 After Zoltan_PHG_Fill_Hypergraph() 
+100.0 200.0 500.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ## END  
+### phg_build.c 177 测试fileCopy 1
+1 2 5 1 1 1 1 1 1 1 1 1 1 1 1 
+###End
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_Build_Hypergraph   
+
+ ### phg.c 413 before Zoltan_PHG_rdivide
+100.0 200.0 500.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ### End
+ZOLTAN (Processor 1) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 1) Entering Zoltan_PHG_Partition   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_Fill_Hypergraph   
+
+ ## phg_bulid.c 161 After Zoltan_PHG_Fill_Hypergraph() 
+100.0 200.0 500.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ## END  
+### phg_build.c 177 测试fileCopy 0
+1 2 5 1 1 1 1 1 1 1 1 1 1 1 1 
+###End
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_Build_Hypergraph   
+
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_Fill_Hypergraph   
+
+ ## phg_bulid.c 161 After Zoltan_PHG_Fill_Hypergraph() 
+300.0 600.0 400.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ## END  
+### phg_build.c 177 测试fileCopy 2
+3 6 4 1 1 1 1 1 1 1 1 1 1 1 1 
+###End
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_Build_Hypergraph   
+
+ ### phg.c 413 before Zoltan_PHG_rdivide
+300.0 600.0 400.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ### End
+ZOLTAN (Processor 2) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_Build_Hypergraph   
+ ### phg.c 413 before Zoltan_PHG_rdivide
+
+ ### phg.c 413 before Zoltan_PHG_rdivide
+100.0 200.0 500.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ### End
+ZOLTAN (Processor 0) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 0) Entering Zoltan_PHG_Partition   
+300.0 600.0 400.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+ ### End
+ZOLTAN (Processor 3) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 3) Entering Zoltan_PHG_Partition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 3) Entering Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 2) Entering Zoltan_PHG_Partition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 2) Entering Zoltan_PHG_CoarsePartition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 1) Entering Zoltan_PHG_CoarsePartition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 0) Entering Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+ZOLTAN (Processor 1) Entering seq_part   
+ZOLTAN (Processor 1) Exiting seq_part   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 1) Entering seq_part   
+ZOLTAN (Processor 1) Exiting seq_part   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+ ## END 
+ZOLTAN (Processor 0) Entering refine_fm2   
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 1) Entering seq_part   
+ZOLTAN (Processor 1) Exiting seq_part   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 2) Entering seq_part   
+ZOLTAN (Processor 2) Exiting seq_part   
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+ZOLTAN (Processor 0) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 2) Entering seq_part   
+ZOLTAN (Processor 2) Exiting seq_part   
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 2) Entering seq_part   
+ZOLTAN (Processor 2) Exiting seq_part   
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+ZOLTAN (Processor 3) Exiting refine_fm2   
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+1,100.0   2,200.0   5,500.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   3,300.0   6,600.0   4,400.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   1,1.0   
+ ## END 
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 2) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 2) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 3) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 3) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 1) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 1) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 0) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 1) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 3) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 2) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Zoltan_HG_Create_Mirror: Have hindex; building vindex.
+ZOLTAN (Processor 0) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Zoltan_HG_Create_Mirror: Have vindex; building hindex.
+ZOLTAN (Processor 0) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 1) Zoltan_HG_Create_Mirror: Have vindex; building hindex.
+ZOLTAN (Processor 1) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Zoltan_HG_Create_Mirror: Have vindex; building hindex.
+ZOLTAN (Processor 2) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 2) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 2) Entering Zoltan_PHG_Partition   
+ZOLTAN (Processor 3) Entering Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 3) Zoltan_HG_Create_Mirror: Have vindex; building hindex.
+ZOLTAN (Processor 3) Exiting Zoltan_HG_Create_Mirror   
+ZOLTAN (Processor 0) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 1) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 1) Entering Zoltan_PHG_Partition   
+ZOLTAN (Processor 3) Entering Zoltan_PHG_rdivide   
+ZOLTAN (Processor 3) Entering Zoltan_PHG_Partition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 2) Entering Zoltan_PHG_CoarsePartition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 3) Entering Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+ZOLTAN (Processor 3) Entering seq_part   
+ZOLTAN (Processor 3) Exiting seq_part   
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   
+ ## END 
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   
+ ## END 
+ZOLTAN (Processor 3) Entering seq_part   
+ZOLTAN (Processor 3) Exiting seq_part   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 1) Entering Zoltan_PHG_CoarsePartition   
+268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   
+ ## END 
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   
+ ## END 
+ZOLTAN (Processor 0) Entering Zoltan_PHG_Partition   
+Zoltan_PHG_CoarsePartition !
+ZOLTAN (Processor 0) Entering Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   
+ ## END 
+ZOLTAN (Processor 3) Entering seq_part   
+ZOLTAN (Processor 3) Exiting seq_part   
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   268433539,1.0   -38779,1.0   -18177,1.0   1659502591,1.0   1728053247,1.0   
+ ## END 
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 3) Entering refine_fm2   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 2) Entering refine_fm2   
+ZOLTAN (Processor 1) Entering seq_part   
+ZOLTAN (Processor 1) Exiting seq_part   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+-1,200.0   27485888,500.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,300.0   0,600.0   -1,1.0   26294352,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,400.0   
+ ## END 
+ZOLTAN (Processor 1) Entering seq_part   
+ZOLTAN (Processor 3) Exiting refine_fm2   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 2) Exiting refine_fm2   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_rdivide   
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+-1,200.0   27485888,500.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,300.0   0,600.0   -1,1.0   26294352,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,400.0   
+ ## END 
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+ZOLTAN (Processor 1) Exiting seq_part   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+-1,200.0   27485888,500.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,300.0   0,600.0   -1,1.0   26294352,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,400.0   
+ ## END 
+ZOLTAN (Processor 1) Entering seq_part   
+ZOLTAN (Processor 1) Exiting seq_part   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+-1,200.0   27485888,500.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,300.0   0,600.0   -1,1.0   26294352,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,400.0   
+ ## END 
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+-1,200.0   27485888,500.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,300.0   0,600.0   -1,1.0   26294352,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,400.0   
+ ## END 
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+
+ ## 0 phg_Vcircle.c 845 进入 Zoltan_PHG_Compute_ConCut fileCopy
+-1,200.0   27485888,500.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,300.0   0,600.0   -1,1.0   26294352,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,1.0   0,400.0   
+ ## END 
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_CoarsePartition   
+ZOLTAN (Processor 1) Entering refine_fm2   
+ZOLTAN (Processor 0) Entering refine_fm2   
+ZOLTAN (Processor 0) Exiting refine_fm2   
+ZOLTAN (Processor 1) Exiting refine_fm2   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_Partition   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG_rdivide   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 0) Exiting Zoltan_PHG   
+ZOLTAN (Processor 0) Zoltan_LB: Done partitioning
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 2) Exiting Zoltan_PHG   
+ZOLTAN (Processor 2) Zoltan_LB: Done partitioning
+ZOLTAN (Processor 3) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 3) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 3) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 3) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 3) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 3) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 3) Exiting Zoltan_PHG   
+ZOLTAN (Processor 3) Zoltan_LB: Done partitioning
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Entering Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Part_To_Proc   
+ZOLTAN (Processor 1) Exiting Zoltan_PHG   
+ZOLTAN (Processor 1) Zoltan_LB: Done partitioning
+ZOLTAN (Processor 2) Entering Zoltan_Invert_Lists   
+ZOLTAN (Processor 1) Entering Zoltan_Invert_Lists   
+ZOLTAN (Processor 3) Entering Zoltan_Invert_Lists   
+ZOLTAN (Processor 0) Entering Zoltan_Invert_Lists   
+ZOLTAN (Processor 1) Zoltan_Invert_Lists: Done comm create
+ZOLTAN (Processor 3) Zoltan_Invert_Lists: Done comm create
+ZOLTAN (Processor 2) Zoltan_Invert_Lists: Done comm create
+ZOLTAN (Processor 0) Zoltan_Invert_Lists: Done comm create
+ZOLTAN (Processor 2) Zoltan_Invert_Lists: Done comm_do
+ZOLTAN (Processor 2) Exiting Zoltan_Invert_Lists   
+ZOLTAN (Processor 2) Zoltan_LB: Done building return arguments
+ZOLTAN (Processor 1) Zoltan_Invert_Lists: Done comm_do
+ZOLTAN (Processor 1) Exiting Zoltan_Invert_Lists   
+ZOLTAN (Processor 1) Zoltan_LB: Done building return arguments
+ZOLTAN (Processor 3) Zoltan_Invert_Lists: Done comm_do
+ZOLTAN (Processor 3) Exiting Zoltan_Invert_Lists   
+ZOLTAN (Processor 3) Zoltan_LB: Done building return arguments
+ZOLTAN (Processor 0) Zoltan_Invert_Lists: Done comm_do
+ZOLTAN (Processor 0) Exiting Zoltan_Invert_Lists   
+ZOLTAN (Processor 0) Zoltan_LB: Done building return arguments
+
+##################################### PRINT_SYNC_START #########################
+ZOLTAN: Objects to be imported to Proc 0
+
+ZOLTAN: Objects to be exported from Proc 0
+    Obj: (7 )   To part:    1  To processor:    1
+ZOLTAN: Objects to be imported to Proc 1
+    Obj: (7 )   To part:    1  From processor:    0
+
+ZOLTAN: Objects to be exported from Proc 1
+    Obj: (13 )   To part:    3  To processor:    3
+    Obj: (14 )   To part:    2  To processor:    2
+ZOLTAN: Objects to be imported to Proc 2
+    Obj: (14 )   To part:    2  From processor:    1
+
+ZOLTAN: Objects to be exported from Proc 2
+    Obj: (18 )   To part:    3  To processor:    3
+ZOLTAN: Objects to be imported to Proc 3
+    Obj: (13 )   To part:    3  From processor:    1
+    Obj: (18 )   To part:    3  From processor:    2
+
+ZOLTAN: Objects to be exported from Proc 3
+
+##################################### PRINT_SYNC_END__ #########################
+
+ZOLTAN (Processor 3) Exiting Zoltan_LB   
+ZOLTAN (Processor 3) Exiting Zoltan_LB_Partition   
+ZOLTAN (Processor 2) Exiting Zoltan_LB   
+ZOLTAN (Processor 2) Exiting Zoltan_LB_Partition   
+ZOLTAN (Processor 1) Exiting Zoltan_LB   
+ZOLTAN (Processor 1) Exiting Zoltan_LB_Partition   
+ZOLTAN Times:  
+ZOLTAN     Partition:     : Max: 0.032527, Sum: 0.129448, Imbal.: 1.0051
+ZOLTAN (Processor 0) Exiting Zoltan_LB   
+ZOLTAN (Processor 0) Exiting Zoltan_LB_Partition   
+
+Hypergraph partition before calling Zoltan
+
+                VERTICES
+    1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  NPARTS-1
+    ------------------------------------------------------------------------
+1   0                                                                       
+2   0  0                                                                    
+3   0  0  0                                                                 
+4   0  0  0  0                                                              
+5   0  0  0  0  0                                                           
+6   0  0  0  0  0  0                                                        
+7   0  0  0  0  0  0  0                                                     
+8   0  0  0  0  0  0  0  1                                                      1
+9   0  0  0  0  0  0  0  1  1                                                   1
+10  0  0  0  0  0  0  0  1  1  1                                                1
+11  0  0  0  0  0  0  0  1  1  1  1                                             1
+12  0  0  0  0  0  0  0  1  1  1  1  1                                          1
+13  0  0  0  0  0  0  0  1  1  1  1  1  1                                       1
+14  0  0  0  0  0  0  0  1  1  1  1  1  1  1                                    1
+15  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2                                 2
+16  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2                              2
+17  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2                           2
+18  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2                        2
+19  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2  2                     2
+20  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2  2  2                  2
+21  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2  2  2  2               2
+22  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2  2  2  2  3            3
+23  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2  2  2  2  3  3         3
+24  0  0  0  0  0  0  0  1  1  1  1  1  1  1  2  2  2  2  2  2  2  3  3  3      3
+Total number of cut edges: 17
+Sum of NPARTS-1:           30
+Balance of vertices across partitions: 1.166667
+
+Graph partition after calling Zoltan
+
+                VERTICES
+    1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  NPARTS-1
+    ------------------------------------------------------------------------
+1   0                                                                       
+2   0  0                                                                    
+3   0  0  0                                                                 
+4   0  0  0  0                                                              
+5   0  0  0  0  0                                                           
+6   0  0  0  0  0  0                                                        
+7   0  0  0  0  0  0  1                                                         1
+8   0  0  0  0  0  0  1  1                                                      1
+9   0  0  0  0  0  0  1  1  1                                                   1
+10  0  0  0  0  0  0  1  1  1  1                                                1
+11  0  0  0  0  0  0  1  1  1  1  1                                             1
+12  0  0  0  0  0  0  1  1  1  1  1  1                                          1
+13  0  0  0  0  0  0  1  1  1  1  1  1  3                                       2
+14  0  0  0  0  0  0  1  1  1  1  1  1  3  2                                    3
+15  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2                                 3
+16  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2                              3
+17  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2                           3
+18  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3                        3
+19  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3  2                     3
+20  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3  2  2                  3
+21  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3  2  2  2               3
+22  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3  2  2  2  3            3
+23  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3  2  2  2  3  3         3
+24  0  0  0  0  0  0  1  1  1  1  1  1  3  2  2  2  2  3  2  2  2  3  3  3      3
+Total number of cut edges: 18
+Sum of NPARTS-1:           41
+Balance of vertices across partitions: 1.166667
+

@@ -1,0 +1,15 @@
+zoltan_align.o: ../../src/Utilities/shared/zoltan_align.c \
+ /usr/include/stdc-predef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+ /home/liec/HP/Zoltan/newbulid/../src/include/zoltan_align.h \
+ ../../src/Utilities/shared/zoltan_util.h ../src/include/Zoltan_config.h
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+
+/home/liec/HP/Zoltan/newbulid/../src/include/zoltan_align.h:
+
+../../src/Utilities/shared/zoltan_util.h:
+
+../src/include/Zoltan_config.h:
