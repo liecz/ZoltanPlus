@@ -84,11 +84,7 @@ Questions? Contact Karen Devine	kddevin@sandia.gov
 @HEADER
 
 ##############################################################################
-
-INSTALLATION
-------------
-Instructions for building and installing Zoltan using CMAKE or Autotools
-are at the following web site:
-
- http://www.cs.sandia.gov/zoltan/ug_html/ug_usage.html
+基于Zoltan自定义CutSize版本
+LastModify：2016年09月1日
+ 
 
